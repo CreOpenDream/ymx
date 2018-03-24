@@ -8,7 +8,8 @@ $_SESSION['access_token'] = $access_token;
 $_SESSION['openid'] = $openid;	
 }
 $qc = new QC($_SESSION['access_token'], $_SESSION['openid']);
-$arr = $qc->get_user_info();
+header("location:http://www.ncgds.cn/ymx");
+//$arr = $qc->get_user_info();
 
 //echo '<meta charset="UTF-8">';
 //echo "<p>";

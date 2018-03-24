@@ -9,8 +9,46 @@
                 <li><a href="#">联系我们</a></li>
                 <li><a href="#">关于我们</a></li>
             </ul>
-            <ul class="login">
+            <?php
+            	session_start();
+            	@require_once("./qqlogin/API/qqConnectAPI.php");
+							if(empty($_SESSION['access_token']) && empty($_SESSION['openid'])){
+            	?>
+         <ul class="login">
                <li><a href="#" id="btnLogin">登录</a></li>
                <li><a href="#" id="btnResgiter">注册</a></li>
             </ul>
+            <?php
+            }
+            else{
+            	$access_token = $_SESSION['access_token'];
+            	$openid = $_SESSION['openid'];
+            	
+            $qc = new QC($_SESSION['access_token'], $_SESSION['openid']);
+						$arr = $qc->get_user_info();
+            	?>
+                 <div class="logined">
+       
+            	<div class="nick-warp">
+            		<span class="icon">
+            			<div class="app-logo"
+            				>
+            	<?php
+            		echo "<img src=\"".$arr['figureurl']."\">";
+            			
+            		
+            		?>
+            			</div>
+            			</span>
+            			<span class="nick">
+            				<span>CRE</span>
+            				<span><button type="button" id="loginout">退出登录</button></span>
+            			</span>
+            		<span class="triangle-down" ></span>
+            	</div>
+            </div>			
+           <?php
+           }
+           	
+           	?>
         </div>
