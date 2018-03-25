@@ -1,4 +1,4 @@
-<div class="fanKui">
+<div id="feedback" class="fanKui">
             <form action="" method="post">
                 <span>姓名</span><input type="text" name="user" class="input_1"/><br/>
                 <span>电话</span><input type="text" name="tel" class="input_1"/><br/>

@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/fontIcon/iconfont.css"/>
-    <link rel="stylesheet" href="css/login.css"/>
-    <link rel="stylesheet" href="css/theme.css"/>
-    <title>主题秀--模板</title>
-    <script src="js/show_login.js"></script>
-</head>
-<body>
-<div class="nav" style="height: 80px;background-color: #a5c176;">
-    <div class="logo" style="padding-top: 11px"><img src="images/logo.png" alt=""/></div>
-    <ul class="navList" style="top:20px">
-        <li><a href="#">首页</a></li>
-        <li><a href="#">主题分类</a></li>
-        <li><a href="#">意见反馈</a></li>
-        <li><a href="#">联系我们</a></li>
-        <li><a href="#">关于我们</a></li>
-    </ul>
-    <ul class="login" style="top:19px">
-        <li><a href="#" id="btnLogin">登录</a></li>
-        <li><a href="#" id="btnResgiter">注册</a></li>
-    </ul>
-</div>
-<div class="search">
-    <input type="text" placeholder="搜索你想找的主题模板！"/>
-    <a href="#" class="iconfont">&#xe6a8;</a>
-</div>
-<div class="category">
-    <div class="theme td">企业介绍</div>
-    <div class="theme jl">个人简历</div>
-    <div class="theme gx">广告宣传</div>
-</div>
-<div class="bk"></div>
+
 <div class="cont">
     <div class="moBan">
         <div class="img_1">
@@ -204,42 +169,3 @@
     <a href="#">下一页</a>
     <a href="#">尾页</a>
 </div>
-<footer>zhutixiu.com 2018 All Rights Reserved</footer>
-<div id="login">
-        <div class="loginCon">
-            <div class="title">
-                <a href="#" id="login1">登录</a>
-                <a href="#" id="register">注册</a>
-                <div id="close" class="iconfont">&#xe635;</div>
-            </div>
-            <form action="" method="post" class="forM" style="display: block;">
-                <input type="text" placeholder="请输入用户登录名" class="inPut" onblur="checkHefa(this.value)"/>
-                <p class="tishi"></p>
-                <input type="password" placeholder="6-16位密码，区分大小写，不能用空格" class="inPut" onblur="checkFrom1(this.value)"/>
-                <p class="tishi_1"></p>
-                <input type="checkbox" checked class="ch"/><span class="qiTian">7天内自动登录</span>
-                <a href="#" class="wjps">忘记密码</a>
-                <input type="submit" value="登录" class="loginBtn"/>
-            </form>
-            <form action="" method="post" class="forM_2 forM" style="display: none;" >
-                <input type="text" placeholder="请填入你的用户名，8-10位字母或数字组合" class="inPut" style="height: 25px;margin-bottom: 18px;" onblur="check_1(this.value)"/>
-                <p class="tishi_2"></p>
-                <input type="password" placeholder="请输入6-16位的密码，区分大小写" class="inPut" id="input_1" style="height: 25px;margin-bottom: 18px;" onblur="check_2(this.value)"/>
-                <p class="tishi_3"></p>
-                <input type="password" placeholder="请再次输入你的密码" class="inPut" id="input_2" style="height: 25px;margin-bottom: 18px;" onblur="check_3()"/>
-                <p class="tishi_4"></p>
-                <input type="text" placeholder="请输入验证码" class="yan"/>
-                <div class="identifyingImg"></div>
-                <span class="change"><a href="#">换一张</a></span>
-                <input type="submit" value="注册" class="loginBtn" id="lgh1"/>
-            </form>
-            <div class="foot">
-                <span>其他方式登录</span>
-                <a href="#" class="iconfont qq">&#xe657</a>
-                <a href="#" class="iconfont weixin">&#xe6b1</a>
-            </div>
-        </div>
-    </div>
-<script src="js/login.js" charset="utf-8"></script>
-</body>
-</html>

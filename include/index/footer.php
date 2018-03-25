@@ -1,1 +1,1 @@
-  <div class="banquan">&copy;2018 lgh&gsj 版权所有</div>
+  <div class="banquan">Copyright &copy;2018 易模秀All Rights Reserved</div>

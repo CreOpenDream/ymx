@@ -1,10 +1,10 @@
-  <div class="nav">
-           <div class="logo">
+  <div class="nav" style="height: 80px;background-color: #a5c176;">
+           <div class="logo" style="padding-top: 11px">
            	<img src="images/ymx_logo.png" alt=""/>
            	</div>
             <ul class="navList">
                 <li><a href="http://www.ncgds.cn/ymx">首页</a></li>
-                <li><a href="http://www.ncgds.cn/ymx/theme.php">主题分类</a></li>
+                <li><a href="theme.php">主题分类</a></li>
                 <li><a href="#feedback">意见反馈</a></li>
                 <li><a href="#contact_us">联系我们</a></li>
                 <!--<li><a href="#">关于我们</a></li>-->
@@ -52,3 +52,4 @@
            	
            	?>
         </div>
+        
