@@ -100,9 +100,8 @@
 .identifyingImg{
     width: 60px;
     height: 27px;
-    border:1px solid green;
     position: absolute;
-    top:141px;
+    top:135px;
     right: 71px;
 }
 .change{

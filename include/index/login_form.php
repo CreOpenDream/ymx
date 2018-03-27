@@ -22,8 +22,11 @@
                 <input type="password" placeholder="请再次输入你的密码" class="inPut" id="input_2" style="height: 25px;margin-bottom: 18px;" onblur="check_3()"/>
                 <p class="tishi_4"></p>
                 <input type="text" placeholder="请输入验证码" class="yan"/>
-                <div class="identifyingImg"></div>
-                <span class="change"><a href="#">换一张</a></span>
+                <div class="identifyingImg">
+                	  <span>
+                    	<img title="点击刷新" src="./captcha.php" align="absbottom" onclick="this.src='captcha.php?'+Math.random();"></img>
+                    </span>
+                </div>
                 <input type="submit" value="注册" class="loginBtn" id="lgh1"/>
             </form>
             <div class="foot">
