@@ -1,3 +1,4 @@
 <?php
-echo dirname(__FILE__);
+		session_start();
+echo empty($_SESSION['access_token']) && empty($_SESSION['openid']);
 ?>

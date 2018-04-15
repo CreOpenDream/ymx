@@ -6,8 +6,9 @@
 	function qqLogin(){
 
 	}
-
+	window.isTrueYzm = false;
 	$(document).ready(function(){
+		//退出登录
   $("#loginout").click(function(){
   htmlobj=$.ajax({url:"./include/index/login_out.php",async:false});
  	if(htmlobj.responseText == "ok"){
@@ -15,7 +16,40 @@
  		location.reload();
  	}
   });
-
+  
+	//注册
+	$("#lgh1").click(function(){
+		
+		if($("#input_1").val() != $("#input_2").val())
+			return false;
+	
+		$.post("captchaPro.php",
+		{
+			validate: $("#yzm").val()
+    	},
+    	 function(data) {
+  				if(data == "1"){
+					$(".tishi_5").text("验证码输入正确");  	
+		$.post("regPro.php",
+		{
+			UserName:$("#reg_username").val(),
+    		PassWord:$("#input_1").val()
+    	},
+    	 function(data) {
+  				if(data == "1"){
+  					alert("注册成功");
+  					location.reload();
+  				}
+		});				
+  				}
+  				else{
+					$(".tishi_5").text("验证码输入错误");  					
+  				}
+  		}				
+	);
+		
+		
+  });
 	//登录注册页签定位
   $("#btnResgiter").click(function(){
   	$("#login1").css('color', '#80858a').css('border-bottom','1px solid #d6d0d9');

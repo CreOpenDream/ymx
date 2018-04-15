@@ -7,5 +7,4 @@ $openid =  $qc->get_openid();
 $_SESSION['access_token'] = $access_token;
 $_SESSION['openid'] = $openid;	
 }
-$qc = new QC($_SESSION['access_token'], $_SESSION['openid']);
 header("location:http://www.ncgds.cn/ymx");

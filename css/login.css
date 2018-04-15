@@ -149,6 +149,7 @@
     position: absolute;
     top:155px;
     cursor: pointer;
+    outline: none;
 }
 .loginBtn:hover{
     background-color: #ff6464;
@@ -212,5 +213,12 @@
     font-size: 12px;
     position: absolute;
     top:117px;
+    left: 0;
+}
+.tishi_5{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top:135px;
     left: 0;
 }

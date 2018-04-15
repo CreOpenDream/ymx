@@ -27,8 +27,10 @@ var tishi_1 = document.getElementsByClassName("tishi_1").item(0);
 var tishi_2 = document.getElementsByClassName("tishi_2").item(0);
 var tishi_3 = document.getElementsByClassName("tishi_3").item(0);
 var tishi_4 = document.getElementsByClassName("tishi_4").item(0);
+var tishi_5 = document.getElementsByClassName("tishi_5").item(0);
 var input_1 = document.getElementById("input_1");
 var input_2 = document.getElementById("input_2");
+var yzm = document.getElementById("yzm");
 function checkHefa(obj){
     setTimeout(function(){
         var numReg = /^[0-9a-zA-Z]*$/
