@@ -1,12 +1,15 @@
 
 <div class="cont">
+	<?php
+	for($i=0; $i<8; $i++){
+?>
     <div class="moBan">
         <div class="img_1">
             <img src="images/lgx.png" alt=""/>
         </div>
         <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
+            <p class="title_1">企业宣传</p>
+            <span class="jiaGe">￥1.99</span>
             <a href="#" class="iconfont">&#xe600;</a>
             <span class="fangKe">10799</span>
         </div>
@@ -16,142 +19,12 @@
             margin-top: 33px;
             margin-left: 63px;" alt=""/></a>
             <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
+            <a href="input.html" class="btn">立即使用</a>
         </div>
     </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
-    <div class="moBan">
-        <div class="img_1">
-            <img src="images/lgx.png" alt=""/>
-        </div>
-        <div class="msg">
-            <p class="title_1">采购部业务分析</p>
-            <span class="jiaGe">￥2.00</span>
-            <a href="#" class="iconfont">&#xe600;</a>
-            <span class="fangKe">10799</span>
-        </div>
-        <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
-            height: 130px;
-            margin-top: 33px;
-            margin-left: 63px;" alt=""/></a>
-            <p>手机扫一扫预览模板</p>
-            <a href="#" class="btn">立即使用</a>
-        </div>
-    </div>
+   <?php
+   }
+   	?>
 </div>
 <div class="fenYe">
     <a href="#">首页</a>
