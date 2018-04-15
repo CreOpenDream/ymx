@@ -58,12 +58,16 @@
             			<div class="app-logo"
             				>
             	<?php
-            		echo "<img src=\"".$arr['figureurl']."\">";
+            		echo "<img src=\"".$arr['figureurl_qq_1']."\">";
             		?>
             			</div>
             			</span>
             			<span class="nick">
-            				<span>CRE</span>
+            				<span>
+            		<?php
+            		echo $arr["nickname"];
+            		?>
+            				</span>
             				<span><button type="button" id="loginout">退出登录</button></span>
             			</span>
             		<span class="triangle-down" ></span>
