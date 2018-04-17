@@ -2,10 +2,7 @@
  	session_start();
 	include "include/dbconn.php";
 	if(!empty($_POST['UserName']) && !empty($_POST['PassWord'])){
-		
-		if(!empty($_POST['UserName']))
 		$username = $_POST['UserName'];
-		if(!empty($_POST['PassWord']))
 		$password = $_POST['PassWord'];
 		
     $userid = '0';

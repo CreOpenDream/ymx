@@ -18,7 +18,15 @@
   });
   
   	//登录
-  	$("#")
+  	$("#login_btn").click(function(){
+  		if($("#login_username").val().length == 0 && $("#login_pwd").val().length == 0)
+  			return false;
+  		 htmlobj=$.ajax({url:"loginPro.php?UserName="+$("#login_username").val()+"&PassWord="+$("#login_pwd").val(),async:false});
+  	if(htmlobj.responseText == "1"){
+ 		//刷新本页面
+ 		location.reload();
+ 	}
+  	});
 	//注册
 	$("#lgh1").click(function(){
 		

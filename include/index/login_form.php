@@ -12,7 +12,7 @@
                 <p class="tishi_1"></p>
                 <input type="checkbox" checked class="ch"/><span class="qiTian">7天内自动登录</span>
                 <a href="#" class="wjps">忘记密码</a>
-                <input type="button" value="登录" class="loginBtn"/>
+                <input type="button" value="登录" class="loginBtn" id="login_btn"/>
             </form>
             <form class="forM_2 forM" style="display: none;" >
                 <input type="text" id="reg_username" placeholder="请填入你的用户名，8-10位字母或数字组合" name="UserName" class="inPut" style="height: 25px;margin-bottom: 18px;" onblur="check_1(this.value)"/>
