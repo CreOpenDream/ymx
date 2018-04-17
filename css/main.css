@@ -405,7 +405,7 @@ body{
  	position: absolute;
     float: right;
     height: 100%;
-    top: 10px;
+    top: 30px;
     right: 100px;
     line-height: 70px;
     color: #fff;
@@ -443,9 +443,9 @@ body{
  
     }
     
-    .triangle-down {
+    /*.triangle-down {
     width: 12px;
     height: 12px;
     background:url(images/arrow_down.png) center no-repeat;
     border: 0px solid red;
-}
+}*/
