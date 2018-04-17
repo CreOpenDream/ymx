@@ -65,7 +65,29 @@
             			<span class="nick">
             				<span>
             		<?php
+            				/**
+ * 返回16位md5值
+ *
+ * @param string $str 字符串
+ * @return string $str 返回16位的字符串
+ */
+function short_md5($str) {
+    return substr(md5($str), 8, 16);
+}
+			$qqopenid = short_md5($openid);
+			$nickname = $arr["nickname"]."_".$qqopenid;
             		echo $arr["nickname"];
+           //将信息保存至数据库
+           $sql = "select user_id from tb_user where user_qqopenid='{$openid}';";
+	//插入语句
+    if($res = mysqli_query($link,$sql)){
+    	$num=mysqli_num_rows($res);
+			if($num<1){
+			//不存在该用户,则注册新账号
+			$sql = "insert into `tb_user` (`user_name`,`user_pwd`,`user_qqopenid`,`user_type`) values('{$nickname}','ymx12345','{$openid}','2');";
+			mysqli_query($link,$sql);
+			}
+		}
             		?>
             				</span>
             				<span><button type="button" id="loginout">退出登录</button></span>

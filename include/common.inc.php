@@ -4,6 +4,16 @@
 	//公用函数
 	//
 	
+	/**
+ * 返回16位md5值
+ *
+ * @param string $str 字符串
+ * @return string $str 返回16位的字符串
+ */
+function short_md5($str) {
+    return substr(md5($str), 8, 16);
+}
+	
 	//接受表单数据并判断内容是否为空
 	function getAndJudge($val,$str){
 		if(empty($_POST[$val])){

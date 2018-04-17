@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<?php
-		@include_once("./config/conn.php");//数据库连接
+	
+		@include_once("./include/dbconn.php");//数据库连接
 		@include_once("./include/index/header.php");//头部
 	?>
 	<body>
