@@ -14,12 +14,12 @@
             <span class="fangKe">10799</span>
         </div>
         <div class="mask">
-            <a href="#" class="erWeiMa"><img src="images/erweima.png" style="width: 130px;
+            <a href="#" class="erWeiMa"><img id="img_qr" src="http://qr.liantu.com/api.php?w=130&text=www.baidu.com" style="width: 130px;
             height: 130px;
             margin-top: 33px;
             margin-left: 63px;" alt=""/></a>
             <p>手机扫一扫预览模板</p>
-            <a href="input.html" class="btn">立即使用</a>
+            <a href="input.php" class="btn">立即使用</a>
         </div>
     </div>
    <?php

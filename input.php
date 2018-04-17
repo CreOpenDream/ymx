@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/theme.css"/>
     <link rel="stylesheet" href="css/input.css"/>
-    <title>易模秀--制作模板</title>
+    <title>易模秀--yem</title>
 </head>
 <body>
 <div class="nav" style="height: 80px;background-color: #a5c176;">
