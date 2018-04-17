@@ -14,7 +14,7 @@
             <span class="fangKe">10799</span>
         </div>
         <div class="mask">
-            <a href="#" class="erWeiMa"><img id="img_qr" src="http://qr.liantu.com/api.php?w=130&text=www.baidu.com" style="width: 130px;
+            <a href="#" class="erWeiMa"><img id="img_qr" src="http://qr.liantu.com/api.php?w=130&text=www.ncgds.cn/ymx/mould/cc/" style="width: 130px;
             height: 130px;
             margin-top: 33px;
             margin-left: 63px;" alt=""/></a>

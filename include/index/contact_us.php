@@ -1,4 +1,4 @@
-<div class="eTitle">THEME SHOW</div>
+<div class="eTitle">YMX 易模秀</div>
  <div class="contact"  id="contact_us">
             <h2>联系我们</h2>
             <p><span>联系QQ:2292853252</span>&nbsp;&nbsp;&nbsp;<span>联系地址:江西省抚州学府路56号</span></p>

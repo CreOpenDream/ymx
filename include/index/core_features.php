@@ -1,4 +1,4 @@
-<h3>主题秀核心特性</h3>
+<h3>易模秀核心特性</h3>
 
         <div class="tedian t1">
             <img src="images/a.png" alt=""/>
