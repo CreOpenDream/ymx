@@ -1,9 +1,9 @@
   <div class="nav" style="height: 80px;background-color: #a5c176;">
-           <div class="logo" style="padding-top: 11px">
+           <div class="logo">
            	<img src="images/ymx_logo.png" alt=""/>
            	</div>
-              <ul class="navList">
-                <li><a href="index.php">首页</a></li>
+            <ul class="navList">
+                 <li><a href="index.php">首页</a></li>
                 <li><a href="theme.php">主题分类</a></li>
                 <li><a href="index.php#feedback">意见反馈</a></li>
                 <li><a href="index.php#contact_us">联系我们</a></li>
@@ -15,10 +15,10 @@
             	
 							if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && empty($_SESSION['UserName'])){
             	?>
-         <ul class="login">
+         <!--<ul class="login">
                <li><a href="#" id="btnLogin">登录</a></li>
                <li><a href="#" id="btnResgiter">注册</a></li>
-            </ul>
+            </ul>-->
             <?php
             }
             else{
@@ -99,4 +99,4 @@ function short_md5($str) {
            }
            	}
            	?>
-           	</div>
+        </div>
