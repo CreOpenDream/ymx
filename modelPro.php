@@ -1,9 +1,9 @@
 <?php
-	session_start();
+	
 	header("Content-Type:text/html;charset=utf-8");
 	include_once("./include/dbconn.php");
 	include_once("./include/common.inc.php");
- 
+ 	session_start();
 	//上传图片操作
 	
 	if(!empty($_FILES['pic']['name'])){
@@ -70,7 +70,7 @@ foreach($con as $id=>$val){ //循环生成
  fwrite($handle,$GLOBALS['str']);
  fclose($handle);
  
- echo "<div style='text-align: center;'><img src='http://qr.liantu.com/api.php?w=280&text=www.ncgds.cn/".$path."' style='margin-top:33px;margin-left: 13px;'/><p>手机扫一扫预览模板</p><a href='input.php' style='margin-top:5px;text-decoration: none;color: dodgerblue;border: 1px solid black;border-radius: 10px;font-size: 16px;padding: 5px;'>重新编辑</a></div>";
+ echo "<div style='text-align: center;'><img src='http://qr.liantu.com/api.php?w=280&text=www.ncgds.cn/ymx/".$path."' style='margin-top:33px;margin-left: 13px;'/><p>手机扫一扫预览模板</p><a href='input.php' style='margin-top:5px;text-decoration: none;color: dodgerblue;border: 1px solid black;border-radius: 10px;font-size: 16px;padding: 5px;top:10px;position:relative;'>重新编辑</a></div>";
 
 				}else{
 					//错误重新刷新本页面

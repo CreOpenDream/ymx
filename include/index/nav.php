@@ -84,12 +84,13 @@ function short_md5($str) {
 			$sql = "insert into `tb_user` (`user_name`,`user_pwd`,`user_qqopenid`,`user_type`) values('{$nickname}','ymx12345','{$openid}','2');";
 			mysqli_query($link,$sql);
 			
-			$sqlid = "select user_id from tb_user where user_name='{$nickname}' and user_pwd='{'ymx12345'}';";
+			}
+			
+		}
+		$sqlid = "select user_id from tb_user where user_qqopenid='{$openid}';";
   			$row = mysqli_fetch_array(mysqli_query($link,$sqlid));	
         	$userid = $row['user_id'];    
   			$_SESSION['UserId'] = $userid;
-			}
-		}
             		?>
 		
                 		</span>

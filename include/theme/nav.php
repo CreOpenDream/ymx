@@ -84,8 +84,16 @@ function short_md5($str) {
 			//不存在该用户,则注册新账号
 			$sql = "insert into `tb_user` (`user_name`,`user_pwd`,`user_qqopenid`,`user_type`) values('{$nickname}','ymx12345','{$openid}','2');";
 			mysqli_query($link,$sql);
+				$sqlid = "select user_id from tb_user where user_name='{$nickname}' and user_pwd='ymx12345';";
+  			$row = mysqli_fetch_array(mysqli_query($link,$sqlid));	
+        	$userid = $row['user_id'];  
+        		$_SESSION['UserId'] = $userid;  
 			}
 		}
+		$sqlid = "select user_id from tb_user where user_qqopenid='{$openid}';";
+  			$row = mysqli_fetch_array(mysqli_query($link,$sqlid));	
+        	$userid = $row['user_id'];    
+  			$_SESSION['UserId'] = $userid;
             		?>
             			 	
                 			
