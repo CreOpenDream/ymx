@@ -2,12 +2,12 @@
  * Created by lgh on 2018/3/10.
  */
 function openNew(){
-    //»ñÈ¡Ò³ÃæµÄ¸ß¶ÈºÍ¿í¶È
+    //ï¿½ï¿½È¡Ò³ï¿½ï¿½Ä¸ß¶ÈºÍ¿ï¿½ï¿½
     var sWidth=document.body.scrollWidth;
     var sHeight=document.body.scrollHeight;
     var login = document.getElementById("login");
 
-    //»ñÈ¡Ò³ÃæµÄ¿ÉÊÓÇøÓò¸ß¶ÈºÍ¿í¶È
+    //ï¿½ï¿½È¡Ò³ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ÈºÍ¿ï¿½ï¿½
     var wHeight=document.documentElement.clientHeight;
     var oMask=document.createElement("div");
     oMask.id="mask";
@@ -16,16 +16,16 @@ function openNew(){
     document.body.appendChild(oMask);
     login.style.display = "block";
 
-    //»ñÈ¡µÇÂ½¿òµÄ¿íºÍ¸ß
+    //ï¿½ï¿½È¡ï¿½ï¿½Â½ï¿½ï¿½Ä¿ï¿½Í¸ï¿½
     var dHeight=login.offsetHeight;
     var dWidth=login.offsetWidth;
-    //ÉèÖÃµÇÂ½¿òµÄleftºÍtop
+    //ï¿½ï¿½ï¿½Ãµï¿½Â½ï¿½ï¿½ï¿½leftï¿½ï¿½top
     login.style.left=sWidth/2-dWidth/2+"px";
     login.style.top=wHeight/2-dHeight/2+"px";
-    //µã»÷¹Ø±Õ°´Å¥
+    //ï¿½ï¿½ï¿½ï¿½Ø±Õ°ï¿½Å¥
     var oClose=document.getElementById("close");
 
-    //µã»÷µÇÂ½¿òÒÔÍâµÄÇøÓòÒ²¿ÉÒÔ¹Ø±ÕµÇÂ½¿ò
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ô¹Ø±Õµï¿½Â½ï¿½ï¿½
     oClose.onclick=oMask.onclick=function(){
         login.style.display = "none";
         document.body.removeChild(oMask);
@@ -36,10 +36,13 @@ window.onload=function(){
 //            openNew();
     var oBtn=document.getElementById("btnLogin");
     var ob = document.getElementById("btnResgiter");
-    //µã»÷µÇÂ¼°´Å¥
-    oBtn.onclick=ob.onclick=function(){
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Å¥
+    if(ob != null && oBtn !=null){
+    	 oBtn.onclick=ob.onclick=function(){
         openNew();
         return false;
     }
+    }
+   
 
 }

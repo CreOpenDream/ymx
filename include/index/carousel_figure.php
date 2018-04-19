@@ -9,6 +9,7 @@
                     <h3 class="sx show">易模秀上线，快去生成您的专属页面吧！</h3>
                 </a>
             </div>
+             <a href="theme.php" class="use" >立即使用</a>
             <!--prev-->
             <div class="left jiantou" onclick="btnEvent(0)"><</div>
             <!--next-->

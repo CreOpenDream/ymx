@@ -22,7 +22,7 @@
     top: 23px;
     left: 208px;
 }
-#inp{
+#inp_1{
     width: 440px;
     height: 80px;
     position: absolute;
@@ -36,7 +36,7 @@
     top: 116px;
     left: 208px;
 }
-#inp2{
+#inp_2{
     position: absolute;
     top:116px;
     left: 328px;
@@ -46,7 +46,7 @@
     top: 146px;
     left: 208px;
 }
-#inp3{
+#inp_3{
     width: 440px;
     height: 25px;
     position: absolute;
@@ -60,7 +60,7 @@
     top: 185px;
     left: 208px;
 }
-#inp4{
+#inp_4{
     width: 440px;
     height: 25px;
     position: absolute;
@@ -74,7 +74,7 @@
     top: 230px;
     left: 208px;
 }
-#inp5{
+#inp_5{
     width: 440px;
     height: 50px;
     position: absolute;
@@ -88,7 +88,7 @@
     top: 304px;
     left: 208px;
 }
-#inp6{
+#inp_6{
     width: 440px;
     height: 80px;
     position: absolute;
@@ -102,7 +102,7 @@
     top:392px;
     left: 208px;
 }
-#inp7{
+#inp_7{
     position: absolute;
     top:392px;
     left: 329px;
@@ -119,4 +119,14 @@
     position: absolute;
     top:432px;
     left: 329px;
+}
+footer{
+    width: 100%;
+    height: 65px;
+    color: #5d6375;
+    line-height: 65px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #293750;
+    margin-top: 25px;
 }

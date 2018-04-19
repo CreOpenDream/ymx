@@ -1,20 +1,21 @@
 /**
  * Created by lgh on 2018/3/10.
  */
-//°´Å¥ ×Ô¶¯ Ð¡Ô²µã  ±£Ö¤indexÍ³Ò»
+//ï¿½ï¿½Å¥ ï¿½Ô¶ï¿½ Ð¡Ô²ï¿½ï¿½  ï¿½ï¿½Ö¤indexÍ³Ò»
 
 var index = 0;
-//ËùÓÐÍ¼Æ¬
+//ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
 var aArr = document.querySelectorAll(".in a");
-//ËùÓÐÐ¡Ô²µã
+//ï¿½ï¿½ï¿½ï¿½Ð¡Ô²ï¿½ï¿½
 // var liArr = document.querySelectorAll(".clear li");
 var h3 = document.getElementsByClassName(".sx");
-//¶¨Ê±Æ÷
+//ï¿½ï¿½Ê±ï¿½ï¿½
 var timer;
 
-var out = document.getElementById("out");
 
-out.onmouseenter = function () {
+var out = document.getElementById("out");
+if(out != null){
+	out.onmouseenter = function () {
     if (timer) {
         clearInterval(timer);
     }
@@ -24,17 +25,19 @@ out.onmouseleave = function () {
     init();
 };
 
+}
+
 function init() {
     timer = setInterval(function () {
         btnEvent(1);
     }, 3000);
 }
 
-//³õÊ¼»¯
+//ï¿½ï¿½Ê¼ï¿½ï¿½
 init();
 
 /**
- * °´Å¥µã»÷
+ * ï¿½ï¿½Å¥ï¿½ï¿½ï¿½
  */
 function btnEvent(type) {
     if (type) {
@@ -54,7 +57,7 @@ function btnEvent(type) {
 }
 
 /**
- * ÒÆ¶¯Í¼Æ¬
+ * ï¿½Æ¶ï¿½Í¼Æ¬
  */
 function move(index) {
     for (var i = 0; i < aArr.length; i++) {
@@ -74,7 +77,7 @@ function move(index) {
 //                h3[i].setAttribute("class","sx");
 //            }
 //        }
-//»Øµ½¶¥²¿
+//ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
 var btn = document.getElementById("ag");
 var clientHeight = document.documentElement.clientHeight;
 window.onscroll = function(){

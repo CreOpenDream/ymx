@@ -1,11 +1,11 @@
-<h3>易模秀核心特性</h3>
+<h3 class="aniview" av-animation="slideInLeft">易模秀核心特性</h3>
 
-        <div class="tedian t1">
+        <div class="tedian t1 aniview" av-animation="slideInLeft">
             <img src="images/a.png" alt=""/>
             <div class="titl">主题定制</div>
             <div class="con">支持导入多种类型数据，快速在线制作绚丽主题页面，主题选择及定义过程简单、灵活。</div>
         </div>
-        <div class="tedian t2">
+        <div class="tedian t2 aniview" av-animation="slideInRight">
             <img src="images/b.png" alt=""/>
             <div class="titl">丰富主题</div>
             <div class="con">内容显示更美观、数据显示更简洁、应有尽有的模版</div>

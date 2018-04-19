@@ -13,4 +13,7 @@
 	
       ?>
 </body>
+<?php
+	@include_once("./include/input/scripts.php");//脚本
+      ?>
 </html>

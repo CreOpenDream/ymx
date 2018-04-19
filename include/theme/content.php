@@ -19,7 +19,18 @@
             margin-top: 33px;
             margin-left: 63px;" alt=""/></a>
             <p>手机扫一扫预览模板</p>
-            <a href="input.php" class="btn">立即使用</a>
+            <?php
+            	session_start();
+          		 if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && empty($_SESSION['UserName'])){
+            
+            	?>
+            <span class="btn" onclick="alert('请先登录!')">立即使用</span>
+            
+            <?php
+            }else{
+            	echo "<a class='btn' href='input.php'>立即使用</a>";
+            }
+            	?>
         </div>
     </div>
    <?php

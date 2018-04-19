@@ -2,20 +2,23 @@
            <div class="logo" style="padding-top: 11px">
            	<img src="images/ymx_logo.png" alt=""/>
            	</div>
-              <ul class="navList">
+              <ul class="navList" style="top:20px">
                 <li><a href="index.php">首页</a></li>
                 <li><a href="theme.php">主题分类</a></li>
                 <li><a href="index.php#feedback">意见反馈</a></li>
                 <li><a href="index.php#contact_us">联系我们</a></li>
                 <!--<li><a href="#">关于我们</a></li>-->
             </ul>
+           
+             
+        </div>
             <?php
             	session_start();
             	@require_once("./qqlogin/API/qqConnectAPI.php");
             	
 							if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && empty($_SESSION['UserName'])){
             	?>
-         <ul class="login">
+         <ul class="login"  style="top:20px">
                <li><a href="#" id="btnLogin">登录</a></li>
                <li><a href="#" id="btnResgiter">注册</a></li>
             </ul>
@@ -25,22 +28,22 @@
             	
             	if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && !empty($_SESSION['UserName'])){
             	?>
-            <div class="logined">
-            	<div class="nick-warp">
-            		<span class="icon">
-            			<div class="app-logo"
-            				>
-            	<?php
-            		echo "<img src='images/p_50.png'>";
+            	
+            	<div class="wrap">
+            		<div class="user">
+                	<?php
+            		echo "<a href='personal.php'><img src='images/b.png'/></a>";
             		?>
-            			</div>
-            			</span>
-            			<span class="nick">
-            				<span><?php echo "".$_SESSION['UserName'];?></span>
-            				<span><button type="button" id="loginout">退出登录</button></span>
-            			</span>
-            		<span class="triangle-down" ></span>
-            	</div>
+                	<span><?php echo "".$_SESSION['UserName'];?></span>
+            		</div>
+            <div class="tuiChu">
+                <ul>
+                    <li><a href="personal.php">用户中心</a></li>
+                    <li><span id="loginout"><a href="">安全退出</a></span></li>
+                </ul>
+            </div>
+            
+            	
             </div>
             	<?php
             	}else{
@@ -51,19 +54,14 @@
             $qc = new QC($_SESSION['access_token'], $_SESSION['openid']);
 						$arr = $qc->get_user_info();
             	?>
-                 <div class="logined">
-       
-            	<div class="nick-warp">
-            		<span class="icon">
-            			<div class="app-logo"
-            				>
-            	<?php
-            		echo "<img src=\"".$arr['figureurl_qq_1']."\">";
+               <div class="wrap">
+            		<div class="user">
+                	<?php
+            		echo "<a href='personal.php'><img src='".$arr['figureurl_qq_1']."'/></a>";
             		?>
-            			</div>
-            			</span>
-            			<span class="nick">
-            				<span>
+                	<span>
+                		
+               
             		<?php
             				/**
  * 返回16位md5值
@@ -89,14 +87,22 @@ function short_md5($str) {
 			}
 		}
             		?>
-            				</span>
-            				<span><button type="button" id="loginout">退出登录</button></span>
-            			</span>
-            		<span class="triangle-down" ></span>
-            	</div>
-            </div>			
+            			 	
+                			
+                			
+                		</span>
+            		</div>
+            <div class="tuiChu">
+                <ul>
+                    <li><a href="personal.php">用户中心</a></li>
+                <li><span id="loginout"><a href="">安全退出</a></span></li>
+                </ul>
+            </div>
+            
+            	
+            </div>
            <?php
            }
            	}
            	?>
-           	</div>
+        </div>

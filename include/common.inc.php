@@ -3,7 +3,18 @@
 	//
 	//公用函数
 	//
-	
+	/**
+* 创建文件夹函数,用于创建保存文件的文件夹
+* @param str $dirPath 文件夹名称
+* @return str $dirPath 文件夹名称
+*/
+function creaDir($dirPath){
+ $curPath = dirname(__FILE__);
+ $path = $curPath.'\\'.$dirPath;
+ if (is_dir($path) || mkdir($path,0777,true)) {
+  return $dirPath;
+ }
+}
 	/**
  * 返回16位md5值
  *
