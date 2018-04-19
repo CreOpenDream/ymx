@@ -18,7 +18,10 @@
 				//注册成功
 				echo "1";
 				$_SESSION['UserName'] = $username;
-				//$userid = getResFromTable("user_id","user_name",$username,"tb_user");
+			$sqlid = "select user_id from tb_user where user_name='{$username}' and user_pwd='{$password}';";
+  			$row = mysqli_fetch_array(mysqli_query($link,$sqlid));	
+        	$userid = $row['user_id'];    
+  			$_SESSION['UserId'] = $userid;
 			}else{
 				//注册失败，插入语句执行失败
 			echo "2";

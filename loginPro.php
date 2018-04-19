@@ -2,6 +2,7 @@
 	header("Content-Type:text/html;charset=utf-8");
 	session_start();
 	include "include/dbconn.php";
+
 	if(isset($_GET['UserName']) && isset($_GET['PassWord'])){
 		$username=$_GET["UserName"];
 		$password=$_GET['PassWord'];
@@ -17,6 +18,10 @@
 			//查找该用户成功，登录成功
   			echo "1";
   			$_SESSION['UserName'] = $username;
+  			$sqlid = "select user_id from tb_user where user_name='{$username}' and user_pwd='{$password}';";
+  			$row = mysqli_fetch_array(mysqli_query($link,$sqlid));	
+        	$userid = $row['user_id'];    
+  			$_SESSION['UserId'] = $userid;
 		}
 	
  	}else{//end $res
