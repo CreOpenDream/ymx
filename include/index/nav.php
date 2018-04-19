@@ -33,7 +33,7 @@
                 	<?php
             		echo "<a href='personal.php'><img src='images/b.png'/></a>";
             		?>
-                	<span><?php echo "".$_SESSION['UserName'].$_SESSION['UserId'];?></span>
+                	<span><?php echo "".$_SESSION['UserName'];?></span>
             		</div>
             <div class="tuiChu">
                 <ul>

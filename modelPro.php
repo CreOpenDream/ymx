@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	header("Content-Type:text/html;charset=utf-8");
 	include_once("./include/dbconn.php");
 	include_once("./include/common.inc.php");
@@ -32,10 +33,10 @@
              $upload_path="mould/cc/images/";//把文件移到目标文件夹
             // $name = $upload_path.date('Ymd_his',time()).'.'.$ext;
             if($key == 0){
-            		$GLOBALS['name'] = $upload_path."img_0.".$ext;
+            		$GLOBALS['name'] = $upload_path."ccimg_0_.".$_SESSION['UserId'].$ext;
             		 move_uploaded_file($upFile['tmp_name'][$key],$GLOBALS['name']);
             }else{
-            	$GLOBALS['name2'] = $upload_path."img_1.".$ext;
+            	$GLOBALS['name2'] = $upload_path."ccimg_1_.".$_SESSION['UserId'].$ext;
             	 move_uploaded_file($upFile['tmp_name'][$key],$GLOBALS['name2']);
             }
            		
@@ -63,7 +64,7 @@ foreach($con as $id=>$val){ //循环生成
  $GLOBALS['str']=str_replace($keys,$content,$GLOBALS['str']);
 }
  fclose($fp);
- $path = "a.html";
+ $path = "cc_".$_SESSION['UserId'].".html";
  //新建空白文件，将$str写入
  $handle=fopen($path,"w");
  fwrite($handle,$GLOBALS['str']);
