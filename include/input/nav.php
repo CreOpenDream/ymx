@@ -34,7 +34,7 @@
             	<div class="wrap">
             		<div class="user">
                 	<?php
-            		echo "<a href='personal.php'><img src='images/b.png'/></a>";
+            		echo "<a href='personal.php'><img src='images/a.png'/></a>";
             		?>
                 	<span><?php echo "".$_SESSION['UserName'];?></span>
             		</div>
