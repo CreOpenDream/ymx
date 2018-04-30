@@ -1,7 +1,5 @@
 <script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
 <script>
-
-
     var btn1 = document.getElementById("grxx");
     var btn2 = document.getElementById("tx");
     var btn3 = document.getElementById("sjh");
@@ -83,4 +81,12 @@
 			
 	
 	});
+	//退出登录
+	  	$("#loginout").click(function(){
+		  	htmlobj=$.ajax({url:"login_out.php",async:false});
+		 	if(htmlobj.responseText == "ok"){
+		 		//刷新本页面
+		 		location.reload();
+		 	}
+	 	});
 </script>
