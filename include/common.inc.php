@@ -167,7 +167,7 @@ function getResesFromTable($getval,$tiaojian,$val,$table){
  //根据某个条件更新个表中的2个结果（唯一）,ok return 1
     function setTwoResFromTable($setrow1,$setval1,$setrow2,$setval2,$atrow,$atval,$table){
         include "include/dbconn.php";
-        $sql = "update $table set $setrow1=$setval1 and $setrow2=$setval2 where $atrow=$atval;";
+        $sql = "update $table set $setrow1=$setval1, $setrow2=$setval2 where $atrow=$atval;";
         return mysqli_query($link,$sql);
         
 	}

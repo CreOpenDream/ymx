@@ -12,13 +12,43 @@
 <div class="content">
     <div class="message" style="display:block">
         <h4>个人信息</h4>
-        <form action="">
-            <p class="hang"><span class="tName">昵称</span> <input type="text" placeholder="" class="niCheng"/></p>
-            <p class="hang"><span class="tName">性别</span> <input type="radio" class="check"/> <span class="tName">男</span> <input
-                    type="radio" class="check"/> <span class="tName">女</span></p>
+        <form>
+            <p class="hang"><span class="tName">昵称</span> <input id="nickname" name="nickname" type="text" placeholder="" class="niCheng"/></p>
+            <p class="hang"><span class="tName">性别</span> <input id="male" name="sex" value="男" type="radio" class="check" checked/> <span class="tName">男</span> <input
+                    type="radio" name="sex" value="女" class="check"/> <span class="tName">女</span></p>
             <p class="hang">
                 <span class="tName">生日</span>
-                <select name="" id="year">
+                <select name="year" id="year">
+                	<option value="1960">1960</option>
+                    <option value="1961">1961</option>
+                    <option value="1962">1962</option>
+                    <option value="1963">1963</option>
+                    <option value="1964">1964</option>
+                    <option value="1965">1965</option>
+                    <option value="1966">1966</option>
+                    <option value="1967">1967</option>
+                    <option value="1968">1968</option>
+                    <option value="1969">1969</option>
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                	<option value="1980">1980</option>
+                    <option value="1981">1981</option>
+                    <option value="1982">1982</option>
+                    <option value="1983">1983</option>
+                    <option value="1984">1984</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
                     <option value="1990">1990</option>
                     <option value="1991">1991</option>
                     <option value="1992">1992</option>
@@ -32,8 +62,18 @@
                     <option value="2000">2000</option>
                     <option value="2001">2001</option>
                     <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                  
+                  
                 </select>
-                <select name="" id="month">
+                <select name="month" id="month">
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
@@ -50,7 +90,7 @@
             </p>
             <p class="hang">
                 <span class="tName">行业</span>
-                <select name="" id="hangYe">
+                <select name="profession" id="hangYe">
                     <option value="请选择">请选择</option>
                     <option value="互联网">互联网</option>
                     <option value="电子商务">电子商务</option>
@@ -64,7 +104,7 @@
             </p>
             <p class="hang">
                 <span class="tName">职业</span>
-                <select name="" id="zhiYe">
+                <select name="occupation" id="zhiYe">
                     <option value="请选择">请选择</option>
                     <option value="设计师">设计师</option>
                     <option value="市场/公关/销售人员">市场/公关/销售人员</option>
@@ -79,9 +119,9 @@
             </p>
             <p class="hang">
                 <span class="tName">QQ</span>
-                <input type="text" class="niCheng"/>
+                <input name="qq" id="qq" type="text" class="niCheng"/>
             </p>
-            <input type="submit" value="保存" class="baoCun"/>
+            <input id="form1" type="button" value="保存" class="baoCun"/>
         </form>
     </div>
     <div class="photo" style="display: none">
@@ -90,7 +130,7 @@
             <input type="file" value="上传头像" class="upLoad"/>
             <span>请上传jpg、png格式，640*640像素，5M以下图片</span>
             <br/>
-            <input type="submit" value="提交" class="baoCun" style="margin-left: 43px"/>
+            <input id="form2" type="button" value="提交" class="baoCun" style="margin-left: 43px"/>
         </form>
     </div>
     <div class="phone" style="display: none" >
@@ -102,7 +142,7 @@
             <input type="text" class="telCheck" placeholder="请输入验证码"/>
             <button>发送验证码</button>
             <br/>
-            <input type="submit" value="提交" class="baoCun" style="margin-left: 118px"/>
+            <input id="form3" type="button" value="提交" class="baoCun" style="margin-left: 118px"/>
         </form>
     </div>
     <div class="email" style="display: none;">
@@ -117,7 +157,7 @@
                 <input type="text" placeholder="邮箱验证码" class="niCheng" style="margin-left: 9px;width: 138px"/>
                 <button>获取验证码</button>
             </p>
-            <input type="submit" value="提交" class="baoCun" style="margin-left: 169px"/>
+            <button id="form4" class="baoCun" style="margin-left: 169px"/>保存</button>
         </form>
     </div>
     <div class="social" style="display: none">
@@ -127,7 +167,6 @@
             <span class="shuxing">QQ昵称：</span>
             <span class="name">
             	
-          
             </span>
             <button style="margin-left: 182px;">绑定</button>
         </div>

@@ -1,5 +1,7 @@
-
+<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
 <script>
+
+
     var btn1 = document.getElementById("grxx");
     var btn2 = document.getElementById("tx");
     var btn3 = document.getElementById("sjh");
@@ -46,4 +48,39 @@
         cont4.style.display = "none";
         cont5.style.display = "block";
     };
+    
+    	$(".baoCun").click(function(){
+    		var btnid = $(this).attr('id');
+    		if(btnid == "form1"){
+    			
+    		var	data = 	{
+			NickName:$("#nickname").val(),
+    		Birthdate:$("#year").val()+"-"+$("#month").val()+"-01",
+    		Sex:$("#male").attr("checked")==true?"男":"女",
+    		Profession:$("#hangYe").val(),
+    		Occupation:$("#zhiYe").val(),
+    		Qq:$("#qq").val(),
+    		Action:1
+    	};
+
+    	$.post("personalPro.php",
+    	data,
+    	 function(msg) {
+  				if(msg == "1"){
+  					alert("修改成功");
+  				}
+		});				
+    		}
+    		if(btnid == "form2"){
+    			
+    		}
+    		if(btnid == "form3"){
+    			
+    		}
+    		if(btnid == "form4"){
+    			
+    		}
+			
+	
+	});
 </script>
