@@ -1,0 +1,40 @@
+.inP2{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.inP2 tr td{
+    padding-bottom: 15px;
+}
+.inP2 tr td:nth-child(odd){
+    width: 15%;
+    font-size: 18px;
+    text-align: right;
+    color: #009ef9;
+    /*display: inline-block;*/
+    margin-right: 20%;
+}
+.inP2 tr td:nth-child(even){
+    width: 85%;
+    display: inline-block;
+    margin-right: 30%;
+}
+.inP2 tr td:nth-child(even) input{
+    width: 117%;
+    height: 28px;
+    border:1px solid #a5c176;
+    font-size: 13px;
+    outline: none;
+}
+#submit{
+    width: 100px;
+    height: 35px;
+    background-color: #00b33b;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

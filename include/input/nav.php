@@ -1,8 +1,8 @@
   <div class="nav" style="height: 80px;background-color: #a5c176;">
-           <div class="logo">
+           <div class="logo" style="padding-top: 11px">
            	<img src="images/ymx_logo.png" alt=""/>
            	</div>
-            <ul class="navList">
+            <ul class="navList" style="top:20px">
                  <li><a href="index.php">首页</a></li>
                 <li><a href="theme.php">主题分类</a></li>
                 <li><a href="index.php#feedback">意见反馈</a></li>

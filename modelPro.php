@@ -4,6 +4,7 @@
 	include_once("./include/dbconn.php");
 	include_once("./include/common.inc.php");
  	session_start();
+ 	$ctime = time();
 	//上传图片操作
 	
 	if(!empty($_FILES['pic']['name'])){
@@ -33,10 +34,10 @@
              $upload_path="mould/cc/images/";//把文件移到目标文件夹
             // $name = $upload_path.date('Ymd_his',time()).'.'.$ext;
             if($key == 0){
-            		$GLOBALS['name'] = $upload_path."ccimg_0_.".$_SESSION['UserId'].$ext;
+            		$GLOBALS['name'] = $upload_path."ccimg_0_".$ctime."_".$_SESSION['UserId'].".".$ext;
             		 move_uploaded_file($upFile['tmp_name'][$key],$GLOBALS['name']);
             }else{
-            	$GLOBALS['name2'] = $upload_path."ccimg_1_.".$_SESSION['UserId'].$ext;
+            	$GLOBALS['name2'] = $upload_path."ccimg_1_".$ctime."_".$_SESSION['UserId'].".".$ext;
             	 move_uploaded_file($upFile['tmp_name'][$key],$GLOBALS['name2']);
             }
            		
@@ -45,8 +46,9 @@
 			//获得文字描述
 			$name = $GLOBALS['name'];
 			$name2 = $GLOBALS['name2'];
+			$userid = $_SESSION['UserId'];
 			//将信息保存到服务器
-			$sqlstr1 = "INSERT INTO `tb_cc` (`cc_user_id`, `cc_company_image`, `cc_brief_introduction`,`cc_company_tenet`,`cc_management_idea`,`cc_values`,`cc_excellent_team`,`cc_team_image`) VALUES ('28', '{$name}','{$inp1}','{$inp3}','{$inp4}','{$inp5}','{$inp6}','{$name2}');";
+			$sqlstr1 = "INSERT INTO `tb_cc` (`cc_user_id`, `cc_company_image`, `cc_brief_introduction`,`cc_company_tenet`,`cc_management_idea`,`cc_values`,`cc_excellent_team`,`cc_team_image`) VALUES ('{$userid}', '{$name}','{$inp1}','{$inp3}','{$inp4}','{$inp5}','{$inp6}','{$name2}');";
 		
 			$res = mysqli_query($link, $sqlstr1);
 			if($res){
@@ -64,22 +66,18 @@ foreach($con as $id=>$val){ //循环生成
  $GLOBALS['str']=str_replace($keys,$content,$GLOBALS['str']);
 }
  fclose($fp);
- $path = "cc_".$_SESSION['UserId'].".html";
+ $path = "cc_".$ctime."_".$_SESSION['UserId'].".html";
  //新建空白文件，将$str写入
  $handle=fopen($path,"w");
  fwrite($handle,$GLOBALS['str']);
  fclose($handle);
  
  echo "<div style='text-align: center;'><img src='http://qr.liantu.com/api.php?w=280&text=www.ncgds.cn/ymx/".$path."' style='margin-top:33px;margin-left: 13px;'/><p>手机扫一扫预览模板</p><a href='input.php' style='margin-top:5px;text-decoration: none;color: dodgerblue;border: 1px solid black;border-radius: 10px;font-size: 16px;padding: 5px;top:10px;position:relative;'>重新编辑</a></div>";
-
 				}else{
 					//错误重新刷新本页面
 					echo "<script>location.reload();</script>";
 					}
-		
-	
 
-		
 	}else{
 	
 	}
