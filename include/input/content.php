@@ -1,5 +1,7 @@
 <div class="container" id="preview">
-    <p>为定制你所需要的企业宣传模块，请您输入以下信息。</p>
+	
+    <p>为定制你所需要的模块，请您输入以下信息。
+    </p>
     <form action="modelPro.php" id="myform" method="post"  name="gsj" enctype="multipart/form-data">
         <span class="inp_1">请输入公司简介:</span>
         <textarea name="inp_1" id="inp_1" cols="30" rows="10">
@@ -17,5 +19,10 @@
         <span class="inp_7">上传团队照片：</span>
         <input type="file" name="pic[]" id="inp_7"/>
         <input type="button" value="提交" id="inp_btn" class="submit"/>
+   		<!--传递模板id-->
+        <?php
+        	//$index 模板id
+        	echo "<input type='hidden' name='mould' value='".$index."' />";
+        	?>
     </form>
 </div>
