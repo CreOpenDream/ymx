@@ -107,8 +107,7 @@ function short_md5($str) {
            }
            	}
            	?>
-        </div>
-</div>
+
 
 
 <div class="kong"></div>

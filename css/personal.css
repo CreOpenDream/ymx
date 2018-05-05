@@ -12,7 +12,6 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 2px solid #98e0e6;
     position: absolute;
     top:43px;
     left:40px;
@@ -43,7 +42,10 @@
 .content{
     float:right;
     width: 1086px;
-    height: 536px;
+    height: auto;
+    border: 2px solid #e3e3e3;
+    padding: 10px;
+    margin: 20px;
     /*border: 1px solid #ed4b4a;*/
 }
 .clearFloat{
@@ -80,15 +82,15 @@
     color: #fff;
     border-radius: 3px;
 }
-/*¸öÈËÐÅÏ¢*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢*/
 .message{
     width: 990px;
     height: 469px;
-    border: 2px solid #e3e3e3;
+    /*border: 2px solid #e3e3e3;*/
     margin-top: 14px;
     margin-left: 17px;
 }
-.message h4,.photo h4,.phone h4,.email h4,.social h4{
+.message h4,.photo h4,.phone h4,.email h4,.social h4,.history h4{
     color: #666666;
     margin-left: 46px;
     margin-top: 22px;
@@ -157,11 +159,11 @@
     margin-left: 153px;
     margin-top: 18px;
 }
-/*Í·Ïñ*/
+/*Í·ï¿½ï¿½*/
 .photo{
     width: 990px;
     height: 300px;
-    border: 2px solid #e3e3e3;
+    /*border: 2px solid #e3e3e3;*/
     margin-top: 14px;
     margin-left: 17px;
 }
@@ -174,11 +176,11 @@
     color:#666666;
     margin-left: 30px;
 }
-/*ÊÖ»úºÅ*/
+/*ï¿½Ö»ï¿½ï¿½*/
 .phone{
     width: 990px;
     height: 334px;
-    border: 2px solid #e3e3e3;
+    /*border: 2px solid #e3e3e3;*/
     margin-top: 14px;
     margin-left: 17px;
 }
@@ -189,7 +191,7 @@
     width: 215px;
     height: 33px;
     outline: none;
-    border:1px solid #dedede;
+    /*border:1px solid #dedede;*/
     border-radius: 3px;
     text-indent: 9px;
     margin-top: 20px;
@@ -209,8 +211,7 @@
     display: inline-block;
     width: 72px;
     height: 32px;
-    border:1px solid green;
-    position: absolute;
+
     top:75px;
     left: 259px;
 }
@@ -236,26 +237,26 @@
     color: #10c55b;
     cursor: pointer;
 }
-/*ÓÊÏä*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 .email{
     width: 990px;
     height: 334px;
-    border: 2px solid #e3e3e3;
+    /*border: 2px solid #e3e3e3;*/
     margin-top: 14px;
     margin-left: 17px;
 }
-/*Éç½»ÕËºÅ*/
+/*ï¿½ç½»ï¿½Ëºï¿½*/
 .social{
     width: 990px;
     height: 469px;
-    border: 2px solid #e3e3e3;
+    /*border: 2px solid #e3e3e3;*/
     margin-top: 14px;
     margin-left: 17px;
 }
 .qq{
     width: 850px;
     height: 107px;
-    border-bottom: 1px dashed #e7e7e7;
+    /*border-bottom: 1px dashed #e7e7e7;*/
     margin: 0 auto;
 }
 .qq .iconfont{
@@ -269,4 +270,100 @@
     display: inline-block;
     font-size: 12px;
     color: #666666;
+}
+.history{
+	width: 990px;
+    height: auto;
+    /*border: 2px solid #e3e3e3;*/
+    margin-top: 14px;
+    margin-left: 17px;
+    
+}
+.moBan{
+    width:250px;
+    height:250px;
+    border:1px solid #d9e2ea;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 3px #b8b8b8;
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+.mask{
+    display: none;
+    width: 250px;
+    height: 250px;
+
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.mask p{
+    color: #fff;
+    font-size: 13px;
+    margin-left: 63px;
+    margin-top: 5px;
+}
+.mask .btn{
+    display: inline-block;
+    width: 122px;
+    height: 25px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #1a8d98;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 65px;
+    margin-top: 14px;
+}
+.moBan:hover{
+    transform: translateY(-3px);
+}
+.moBan:hover .mask{
+    display: block;
+}
+.moBan img{
+    width: 247px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 2px;
+    background-color: rgba(0,0,0,0.7);
+}
+.msg{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+.title_1{
+    color: #000;
+    font-size: 13px;
+    position: absolute;
+    top:3px;
+    left: 9px;
+}
+.jiaGe{
+    font-size: 13px;
+    color: #f3645a;
+    position: absolute;
+    top:30px;
+    left: 7px;
+}
+.msg a{
+    font-size: 14px;
+    color: green;
+    text-decoration: none;
+    position: absolute;
+    top:6px;
+    right: 23px;
+}
+.fangKe{
+    font-size: 13px;
+    color: #0086b3;
+    position: absolute;
+    top:30px;
+    right: 20px;
 }

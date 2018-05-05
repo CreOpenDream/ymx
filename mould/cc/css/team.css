@@ -109,6 +109,7 @@ html,body{
     animation: music_disc 2s linear infinite;
 }
 .page{
+	width: 100%;
     height: 100%;
 }
 .page .bg{
@@ -130,7 +131,7 @@ html,body{
     background-size: 100% 100%;
 }
 #page1 .left,.right{
-    width: 67px;
+    width: 19%;
     height: 330px;
     font-size: 40px;
     font-weight: bold;
@@ -207,7 +208,7 @@ html,body{
 .border{
     width: 45%;
     height: auto;
-    margin-left: 4%;
+    margin:0 auto;
     border:1px solid #fff;
     animation: enlarge 1.1s ease 0.8s 1;
     animation-fill-mode: forwards;
@@ -235,7 +236,7 @@ html,body{
     position: absolute;
     top:9%;
     left:30%;
-    animation: show_1 1.3s ease 2s 1;
+    animation: show_1 1.3s ease 1.5s 1;
     animation-fill-mode: forwards;
 }
 @keyframes rightX_2{
@@ -253,7 +254,7 @@ html,body{
     position: absolute;
     top:21%;
     left: -73%;
-    animation: rightX_2 0.7s ease 3.0s 1 forwards;
+    animation: rightX_2 0.7s ease 2.3s 1 forwards;
 
 }
 @keyframes xuanZhuan {
@@ -269,10 +270,10 @@ html,body{
     height: 170px;
     border: 3px solid #fff;
     position: absolute;
-    bottom:13%;
+    bottom:8%;
     left: 15%;
     transform: scale(0);
-    animation: xuanZhuan 1.3s ease 4.8s 1;
+    animation: xuanZhuan 1.3s ease 3.0s 1;
     animation-fill-mode: forwards;
 }
 .image_1 img{
@@ -295,13 +296,13 @@ html,body{
     width: 70%;
     height: 127px;
     position: absolute;
-    top: 56%;
+    top: 66%;
     left: 100%;
     font-weight: bold;
     font-size: 16px;
     color: #0e2e47;
     line-height: 25px;
-    animation: leftX_2 0.6s ease 3.1s 1 forwards;
+    animation: leftX_2 0.6s ease 2.8s 1 forwards;
 
 }
 @keyframes Scale {
@@ -322,7 +323,7 @@ html,body{
     color: #000000;
     line-height: 30px;
     transform: scale(0);
-    animation: Scale 1.3s ease 3.4s 1;
+    animation: Scale 1.3s ease 2.9s 1;
     animation-fill-mode: forwards;
 }
 #page3 .bg{
@@ -368,16 +369,18 @@ html,body{
 }
 @keyframes left_5 {
     0%{
-        transform: translate(0px,0px);
+        top:97%;
+        left:-26%;
     }
     100%{
-        transform: translate(329px,-220px);
+        top:69%;
+    	left: 11%;
     }
 }
 #jzgn{
     position: absolute;
-    top:100%;
-    left: -71%;
+    top:97%;
+    left:-26%;
     animation: left_5 1.1s ease 3.2s 1;
     animation-fill-mode: forwards;
 }

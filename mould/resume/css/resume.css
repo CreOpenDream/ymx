@@ -224,8 +224,8 @@ html,body{
 }
 @keyframes rightH {
    from{
-        transform: translateX(-128%);
-        -webkit-transform: translateX(-128%);
+        transform: translateX(-132%);
+        -webkit-transform: translateX(-132%);
    }
     to{
         transform: translateX(0%);
@@ -234,8 +234,8 @@ html,body{
 }
 @-webkit-keyframes rightH{
     from{
-        transform: translateX(-128%);
-        -webkit-transform: translateX(-128%);
+        transform: translateX(-132%);
+        -webkit-transform: translateX(-132%);
     }
     to{
         transform: translateX(0%);
@@ -267,8 +267,8 @@ html,body{
     font-size: 22px;
     font-weight: bold;
     position: absolute;
-    transform:translateX(-128%);
-    -webkit-transform:translateX(-128%);
+    transform:translateX(-132%);
+    -webkit-transform:translateX(-132%);
     top:40%;
     left: 4%;
     animation:rightH 0.9s ease 3.6s 1 forwards;
@@ -280,8 +280,8 @@ html,body{
     position: absolute;
     top:58%;
     left: 4%;
-    transform:translateX(-128%);
-    -webkit-transform:translateX(-128%);
+    transform:translateX(-132%);
+    -webkit-transform:translateX(-132%);
     animation:rightH 0.9s ease 3.6s 1 forwards;
 }
 .hobby{

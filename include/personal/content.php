@@ -7,10 +7,11 @@
         <li id="sjh">手机号</li>
         <li id="yx">邮箱</li>
         <li id="sjzh">社交账号</li>
+        <li id="lsmb">历史模板</li>
     </ul>
 </div>
 <div class="content">
-    <div class="message" style="display:block">
+    <div class="message" style="display:none">
         <h4>个人信息</h4>
         <form>
             <p class="hang"><span class="tName">昵称</span> <input id="nickname" name="nickname" type="text" placeholder="" class="niCheng"/></p>
@@ -182,6 +183,121 @@
             <span class="name">未知</span>
             <button style="margin-left: 182px;">绑定</button>
         </div>
+    </div>
+    <div class="history" style="display: block">
+        <h4>历史模板</h4>
+<?php
+	$dbhelper = new SqlHelper();
+		//dql语句，返回的是对象
+	$res = $dbhelper->execute_dql("select * from tb_cc where cc_user_id =".$_SESSION['UserId']);
+	 while ($obj=mysqli_fetch_object($res))
+    {
+    
+	?>
+
+    <div class="moBan">
+        <div class="img_1">
+        	<?php
+        		echo "<img src='images/m1.png' alt=''/>";
+        		?>
+        </div>
+        <div class="msg">
+            <p class="title_1">
+            	<?php echo $obj->cc_name;?>
+            </p>
+            <span class="jiaGe">
+            	</span>
+            <a href="#" class="iconfont">&#xe600;</a>
+            <span class="fangKe"> 访客：
+            	<?php
+            	echo $obj->cc_visit;
+            	 ?>
+            	
+            </span>
+        </div>
+        <div class="mask">
+            <a href="#" class="erWeiMa">
+            	
+            	<?php 
+            		
+            		echo "<img id='img_qr' src='http://qr.liantu.com/api.php?w=130&text=www.ncgds.cn/ymx/".$obj->cc_url."' style='width: 130px;height: 130px;margin-top: 33px;margin-left: 63px;' alt=''/>";            		
+            	?>
+            
+            </a>
+            <p>手机扫一扫预览模板</p>
+            <?php
+            	//session_start();
+          		 if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && empty($_SESSION['UserName'])){
+            
+            	?>
+            <span class="btn" onclick="alert('请先登录!')">立即使用</span>
+            
+            <?php
+            }else{
+            	//echo "<a class='btn' href='input.php?mould=".$obj->mould_id."'>立即使用</a>";
+            }
+            	?>
+        </div>
+    </div>
+	<?php
+	}
+	?>
+	<?php
+
+		//dql语句，返回的是对象
+	$res = $dbhelper->execute_dql("select * from tb_resume where resume_userid =".$_SESSION['UserId']);
+	 while ($obj=mysqli_fetch_object($res))
+    {
+    
+	?>
+
+    <div class="moBan">
+        <div class="img_1">
+        	<?php
+        		echo "<img src='images/m2.png' alt=''/>";
+        		?>
+        </div>
+        <div class="msg">
+            <p class="title_1">
+            	<?php echo $obj->resume_name;?>的个人简历
+            </p>
+            <span class="jiaGe">
+            	</span>
+            <a href="#" class="iconfont">&#xe600;</a>
+            <span class="fangKe"> 访客：
+            	<?php
+            	echo $obj->resume_visit;
+            	 ?>
+            	
+            </span>
+        </div>
+        <div class="mask">
+            <a href="#" class="erWeiMa">
+            	
+            	<?php 
+            		
+            		echo "<img id='img_qr' src='http://qr.liantu.com/api.php?w=130&text=www.ncgds.cn/ymx/".$obj->resume_url."' style='width: 130px;height: 130px;margin-top: 33px;margin-left: 63px;' alt=''/>";            		
+            	?>
+            
+            </a>
+            <p>手机扫一扫预览模板</p>
+            <?php
+            	//session_start();
+          		 if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && empty($_SESSION['UserName'])){
+            
+            	?>
+            <span class="btn" onclick="alert('请先登录!')">立即使用</span>
+            
+            <?php
+            }else{
+            	//echo "<a class='btn' href='input.php?mould=".$obj->mould_id."'>立即使用</a>";
+            }
+            	?>
+        </div>
+    </div>
+	<?php
+	}
+	?>
     </div>
 </div>
 <div class="clearFloat">
