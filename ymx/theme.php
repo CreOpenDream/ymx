@@ -2,6 +2,7 @@
 <html>
 	<?php
 		@include_once("./config/conn.php");//数据库连接
+		include_once("./include/SqlHelper.php");//SqlHelper工具类
 		@include_once("./include/theme/header.php");//头部
 	?>
 	<body>

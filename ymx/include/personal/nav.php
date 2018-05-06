@@ -1,26 +1,26 @@
-  <div class="nav" style="height: 80px">
-           <div class="logo" style="padding-top: 11px">
-           	<img src="images/ymx_logo.png" alt=""/>
-           	</div>
-            <ul class="navList" style="top:20px">
-               <li><a href="index.php">首页</a></li>
+<div class="nav" style="height: 80px;background-color: #a5c176;">
+
+
+        <div class="logo" style="padding-top: 11px"><img src="images/logo.png" alt=""/></div>
+        <ul class="navList" style="top:20px">
+  				 <li><a href="index.php">首页</a></li>
                 <li><a href="theme.php">主题分类</a></li>
                 <li><a href="index.php#feedback">意见反馈</a></li>
                 <li><a href="index.php#contact_us">联系我们</a></li>
-                <!--<li><a href="#">关于我们</a></li>-->
-            </ul>
-          
-        </div>
+        </ul>
+       </div>
             <?php
             	session_start();
             	@require_once("./qqlogin/API/qqConnectAPI.php");
             	
 							if(empty($_SESSION['access_token']) && empty($_SESSION['openid']) && empty($_SESSION['UserName'])){
+								header("location:index.php");
+								
             	?>
-         <ul class="login"  style="top:20px">
+         <!--<ul class="login"  style="top:20px">
                <li><a href="#" id="btnLogin">登录</a></li>
                <li><a href="#" id="btnResgiter">注册</a></li>
-            </ul>
+            </ul>-->
             <?php
             }
             else{
@@ -56,7 +56,7 @@
                <div class="wrap">
             		<div class="user">
                 	<?php
-            		echo "<a href='personal.php'><img src='".$arr['figureurl_qq_1']."'/></a>";
+            		echo "<a href='personal.html'><img src='".$arr['figureurl_qq_1']."'/></a>";
             		?>
                 	<span>
                 		
@@ -85,7 +85,6 @@ function short_md5($str) {
 			mysqli_query($link,$sql);
 			
 			}
-			
 		}
 		$sqlid = "select user_id from tb_user where user_qqopenid='{$openid}';";
   			$row = mysqli_fetch_array(mysqli_query($link,$sqlid));	
@@ -108,4 +107,16 @@ function short_md5($str) {
            }
            	}
            	?>
-        </div>
+
+
+
+<div class="kong"></div>
+<div class="personal">
+    <img src="images/a.png" alt=""/>
+    <span class="name">
+    	<?php
+		echo isset($_SESSION['UserName'])?$_SESSION['UserName']:$arr["nickname"];   	
+    	
+    ?></span>
+    <!--<span class="time">注册于2017/04/19</span>-->
+</div>

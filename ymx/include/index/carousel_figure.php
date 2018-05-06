@@ -11,7 +11,6 @@
             </div>
              <a href="theme.php" class="use" >立即使用</a>
             <!--prev-->
-            <div class="left jiantou" onclick="btnEvent(0)"><</div>
+            <div class="left jiantou" onclick="btnEvent(0)"></div>
             <!--next-->
             <div class="right jiantou" onclick="btnEvent(1)">></div>
-        </div>

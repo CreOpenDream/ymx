@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="images/ymx.ico" type="image/x-icon" />
+		<link rel="bookmark" href="images/ymx.ico" />
+		<!--添加Viewport标签-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!--禁止将数字变为电话号码-->
+		<meta name="format-detection" content="telephone=no" />
+		<!--iphone设备中的safari私有meta标签-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!--iphone的私有标签-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/fontIcon/iconfont.css" />
+		<link rel="stylesheet" href="css/resume.css" />
+		<title>{resume_name}的个人简历</title>
+	</head>
+
+	<body>
+		<!--音乐控制图标-->
+		<div id="music">
+			<img src="images/music.jpg" class="play" alt="" id="as" />
+		</div>
+		<!--第一页-->
+		<div class="page" id="page1">
+			<!--背景-->
+			<div class="bg"></div>
+			<h3>>>>个人资料</h3>
+			<!--头像-->
+			<img src="{resume_head_img}" alt="" />
+			<!--个人信息-->
+			<div class="msg">
+				<p>姓名：{resume_name}</p>
+				<p>年龄：{resume_age}</p>
+				<p>籍贯：{resume_native_place}</p>
+				<p>学历：{resume_education}</p>
+				<p>专业：{resume_major}</p>
+			</div>
+			<span class="sp1">>>></span>
+			<!--兴趣爱好-->
+			<div class="hobby">
+				{resume_hobby}
+			</div>
+			<span class="sp2">>>></span>
+			<!--个人宣言-->
+			<div class="xuanYan">
+				{resume_personal_declaration}
+			</div>
+		</div>
+		<!--第二页-->
+		<div class="page" id="page2">
+			<div class="bg"></div>
+			<h3>>>>工作经历</h3>
+			<span class="tp1">>>></span>
+			<span class="sTou">{resume_work_experience11}</span>
+			<span class="xian"></span>
+			<span class="neRong">{resume_work_experience12}</span>
+
+			<span class="tp1" style="top:36%">>>></span>
+			<span class="sTou" style="top:37%">{resume_work_experience21}</span>
+			<span class="xian" style="top:42%"></span>
+			<span class="neRong" style="top:43%">{resume_work_experience22}</span>
+
+			<span class="tp1" style="top:56%">>>></span>
+			<span class="sTou" style="top:57%">{resume_work_experience31}</span>
+			<span class="xian" style="top:62%"></span>
+			<span class="neRong" style="top:63%">{resume_work_experience32}</span>
+
+			<span class="tp1" style="top:76%">>>></span>
+			<span class="sTou" style="top:77%">{resume_work_experience41}</span>
+			<span class="xian" style="top:82%"></span>
+			<span class="neRong" style="top:83%">{resume_work_experience42}</span>
+		</div>
+		<!--第三页-->
+		<div class="page" id="page3">
+			<div class="bg"></div>
+			<h3>>>>能力展示</h3>
+			<div class="rxy">语言能力</div>
+			<div class="NengLi">{resume_language_ability}</div>
+
+			<div class="rxy" style="top:37%;">软件能力</div>
+			<div class="NengLi" style="top:37%;">{resume_software_capability}</div>
+
+			<div class="rxy" style="top:57%">其他能力</div>
+			<div class="NengLi" style="top:57%">{resume_other_capability}</div>
+
+			<div class="beiZhu">
+				{resume_ability_remark}
+			</div>
+		</div>
+		<!--第四页-->
+		<div class="page" id="page4">
+			<div class="bg"></div>
+			<h3>>>>作品展示</h3>
+			<img src="{resume_works1_imgurl}" alt="" class="im1" />
+			<img src="{resume_works2_imgurl}" alt="" class="im2" />
+			<img src="{resume_works3_imgurl}" alt="" class="im3" />
+			<img src="{resume_works4_imgurl}" alt="" class="im4" />
+			<!--作品简述-->
+			<p class="socket">{resume_brief_resume}</p>
+		</div>
+		<!--箭头标志-->
+		<div class="iconfont top">
+			&#xe639;
+		</div>
+		<audio src="audio/w1.mp3" autoplay></audio>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/qyxc.js"></script>
+	</body>
+
+</html>
