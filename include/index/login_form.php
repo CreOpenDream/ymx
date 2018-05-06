@@ -25,7 +25,7 @@
                
                 <div class="identifyingImg">
                 	  <span>
-                    	<img title="点击刷新" src="./captcha.php" align="absbottom" onclick="this.src='captcha.php?'+Math.random();"></img>
+                    	<img title="点击刷新" src="./captcha.php" align="absbottom" onclick="this.src='captcha.php?'+Math.random();">
                     </span>
                 </div>
                  <p class="tishi_5" style="color: red;"></p>
@@ -33,7 +33,7 @@
             </form>
             <div class="foot">
                 <span>其他方式登录</span>
-                <a href="qqlogin/oauth/index.php"id="qqLoginBtn" onclick="qqLogin()" class="iconfont qq">&#xe657</a>
+                <a href="qqlogin/oauth/index.php" id="qqLoginBtn" onclick="qqLogin()" class="iconfont qq">&#xe657</a>
                 <a href="#" class="iconfont weixin">&#xe6b1</a>
             </div>
         </div>

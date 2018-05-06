@@ -1,1 +1,1 @@
-<footer>Copyright &copy;2018 易模秀All Rights Reserved/footer>
+<footer>Copyright &copy;2018 易模秀All Rights Reserved</footer>
