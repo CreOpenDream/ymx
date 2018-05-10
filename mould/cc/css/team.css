@@ -127,7 +127,7 @@ html,body{
     position: relative;
 }
 #page1 .bg{
-    background: url("../images/bg1.png") no-repeat center center;
+    background: url("../images/team.png") no-repeat center center;
     background-size: 100% 100%;
 }
 #page1 .left,.right{
@@ -136,7 +136,7 @@ html,body{
     font-size: 40px;
     font-weight: bold;
     position: absolute;
-    color: #5eecee;
+    color: #000;
 }
 @keyframes rightX {
     0%{
@@ -187,7 +187,7 @@ html,body{
     height: 52px;
 }
 #page2 .bg{
-    background: url("../images/bg2.png") no-repeat center center;
+    background: url("../images/team.png") no-repeat center center;
 }
 @keyframes enlarge {
     0%{
@@ -225,11 +225,11 @@ html,body{
     opacity: 0;
     width: 37%;
     height: 45px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius:20px;
     font-size: 23px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     letter-spacing: 5px;
     text-align: center;
     line-height: 45px;
@@ -250,7 +250,7 @@ html,body{
 #page2 .image{
     width: 70%;
     height: 170px;
-    border: 3px solid #fff;
+    border: 3px solid #000;
     position: absolute;
     top:21%;
     left: -73%;
@@ -268,7 +268,7 @@ html,body{
 .image_1{
     width: 68%;
     height: 170px;
-    border: 3px solid #fff;
+    border: 3px solid #000;
     position: absolute;
     bottom:8%;
     left: 15%;
@@ -298,9 +298,10 @@ html,body{
     position: absolute;
     top: 66%;
     left: 100%;
-    font-weight: bold;
-    font-size: 16px;
-    color: #0e2e47;
+    /*font-weight: bold;*/
+    font-size: 16px
+;
+    color: #000;
     line-height: 25px;
     animation: leftX_2 0.6s ease 2.8s 1 forwards;
 
@@ -327,7 +328,7 @@ html,body{
     animation-fill-mode: forwards;
 }
 #page3 .bg{
-    background: url("../images/bg3.png") no-repeat center center;
+    background: url("../images/team.png") no-repeat center center;
 }
 @keyframes left_3 {
     0%{
@@ -339,6 +340,7 @@ html,body{
         left: 11%;
     }
 }
+
 .qywh{
     width:80%;
     height: 65px;
@@ -392,14 +394,14 @@ html,body{
     line-height: 30px;
     padding-bottom: 8px;
     margin-bottom: 8px;
-    color: #fff;
-    border-bottom: 5px solid #fff;
+    color: #000;
+    border-bottom: 5px solid #000;
 }
 .qywh p{
-    color: #fff;
+    color: #000;
     font-size: 16px;
     line-height: 32px;
 }
 #page4 .bg{
-    background: url("../images/bg2.png") no-repeat center center;
+    background: url("../images/team.png") no-repeat center center;
 }

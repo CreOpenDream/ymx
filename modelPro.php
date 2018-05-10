@@ -53,8 +53,8 @@ if (isset($_POST['mould'])) {
 			}
 			//获得文字描述
 			@$rootpath = "mould/cc/";
-			@$name1 = substr($GLOBALS["name1"], strlen($rootpath));
-			@$name2 = substr($GLOBALS["name2"], strlen($rootpath));
+			@$name1 = substr($GLOBALS["name0"], strlen($rootpath));
+			@$name2 = substr($GLOBALS["name1"], strlen($rootpath));
 			@$path = "mould/cc/cc_" . $ctime . "_" . $_SESSION['UserId'] . ".html";
 			@$cc_url = $path;
 

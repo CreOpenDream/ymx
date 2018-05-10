@@ -189,8 +189,8 @@ html,body{
 }
 @keyframes leftW {
     0%{
-        transform: translateX(187%);
-        -webkit-transform: translateX(187%);
+        transform: translateX(198%);
+        -webkit-transform: translateX(198%);
     }
     100%{
         transform: translateX(0);
@@ -199,8 +199,8 @@ html,body{
 }
 @-webkit-keyframes leftW {
     0%{
-        transform: translateX(187%);
-        -webkit-transform: translateX(187%);
+        transform: translateX(198%);
+        -webkit-transform: translateX(198%);
     }
     100%{
         transform: translateX(0);
